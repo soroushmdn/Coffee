@@ -84,25 +84,4 @@ function scrollUp() {
   }
 }
 
-//  @@@@@@@@@@@@@@@@@@ scrollrevealjs.org @@@@@@@@@@@@@@@@@@
 
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '50px',
-  duration: 2500,
-  delay: 400,
-});
-
-sr.reveal(`.home__title,.home__description,.home__scrollimg,.products`);
-
-sr.reveal(`.home__stats ,.specialty__box,.logo__img,.footer__content`, {
-  interval: 150,
-});
-
-sr.reveal(`.quality__images ,.blog__card ,.footer__social`, {
-  origin: 'left',
-});
-
-sr.reveal(`.quality__data,.footer__copy`, {
-  origin: 'right',
-});
