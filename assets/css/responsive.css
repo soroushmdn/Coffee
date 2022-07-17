@@ -349,6 +349,7 @@
   .quality__images {
     width: 270px;
     justify-self: center;
+    padding-right: 2rem;
   }
 
   .quality__img-big {
@@ -357,6 +358,7 @@
 
   .quality__img-small {
     width: 100px;
+    right: -1rem;
   }
 
   .quality__subprice {
@@ -422,6 +424,37 @@
 
   .footer__copy {
     text-align: center;
-    width: 85%;
+  }
+}
+
+@media (max-width: 374px) {
+  /*@@@@@@@@@@@@@@@@ QUALITY @@@@@@@@@@@@@@@@*/
+
+  .quality__images {
+    width: 250px;
+    padding-right: 1rem;
+  }
+
+  .quality__img-small {
+    width: 90px;
+  }
+
+  .footer__form {
+    width: 270px;
+  }
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@@@
+  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
   }
 }
