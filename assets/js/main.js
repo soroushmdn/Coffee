@@ -50,7 +50,7 @@ let mixerProducts = mixitup('.products__group', {
     target: '.products__card',
   },
   animation: {
-    duration: 300,
+    duration: 0,
   },
 });
 
