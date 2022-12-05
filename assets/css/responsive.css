@@ -1,4 +1,4 @@
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .home__group {
     gap: 1rem;
   }
@@ -40,6 +40,11 @@
 
   .quality__description {
     width: 100%;
+  }
+
+  /*@@@@@@@@@@@@@@@@ TEAM @@@@@@@@@@@@@@@@*/
+  .team__container {
+    gap: 3rem;
   }
 
   /*@@@@@@@@@@@@@@@@ BLOG @@@@@@@@@@@@@@@@*/
@@ -261,6 +266,12 @@
     padding: 0.7rem;
   }
 
+  /*@@@@@@@@@@@@@@@@ TEAM @@@@@@@@@@@@@@@@*/
+  .team__container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
   /*@@@@@@@@@@@@@@@@ BLOG @@@@@@@@@@@@@@@@*/
 
   .blog__container {
@@ -280,7 +291,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   /*@@@@@@@@@@@@@@@@ SPECIALTY @@@@@@@@@@@@@@@@*/
   .specialty__data {
     grid-template-columns: 1fr;
