@@ -536,6 +536,151 @@ main {
   opacity: 1;
 }
 
+/*@@@@@@@@@@@@@@@@ TEAM @@@@@@@@@@@@@@@@*/
+.team__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.team__card {
+  background: var(--card-color);
+  border-radius: 0.7rem;
+  padding: 2rem 3rem 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.team__card img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px var(--card-color), 0 0 0 9px var(--first-color);
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.team__card h3 {
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.team__social {
+  background: var(--first-color);
+  box-shadow: 0 5px 15px hsl(36, 72%, 55%);
+  border-radius: 3rem;
+  padding: 0.8rem;
+  position: absolute;
+  bottom: -1.8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: start;
+  width: 215px;
+  overflow: hidden;
+  transform-origin: 17px 17px;
+}
+
+.team__social-control {
+  position: relative;
+  transform-origin: 17px 17px;
+  transition: 0.3s;
+}
+
+.team__social .toggle {
+  background: var(--card-color);
+  color: var(--first-color);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.team__social ul,
+.team__social p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-left: 3.5rem;
+}
+
+.team__social p {
+  top: 0.5rem;
+
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.team__social ul {
+  display: flex;
+  gap: 0.5rem;
+
+  transform: rotate(135deg);
+  transform-origin: 17px 17px;
+}
+
+.team__social ul a {
+  background: var(--card-color);
+  color: var(--title-color);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+}
+
+/* ------ team Js classes ------ */
+
+.active .team__social-control {
+  transform: rotate(-135deg);
+}
+
+.team__social.active {
+  animation: up-animation 0.8s ease-in-out forwards;
+}
+
+@keyframes up-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-3deg);
+  }
+
+  75% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.team__social.down-animation {
+  animation: down-animation 0.8s ease-in-out forwards;
+}
+
+@keyframes down-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+
+  75% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 /*@@@@@@@@@@@@@@@@ BLOG @@@@@@@@@@@@@@@@*/
 
 .blog__container {
