@@ -71,6 +71,26 @@ function activeProduct() {
   });
 }
 
+/*@@@@@@@@@@@@@@@@@ TEAM CARDS @@@@@@@@@@@@@@@@@*/
+
+const teamToggles = document.querySelectorAll('.team__social .toggle');
+
+teamToggles.forEach((e) => {
+  e.addEventListener('click', function () {
+    const social = this.parentElement.parentElement;
+
+    if (social.classList.contains('active')) {
+      social.classList.add('down-animation');
+
+      setTimeout(() => {
+        social.classList.remove('down-animation');
+      }, 1000);
+    }
+
+    social.classList.toggle('active');
+  });
+});
+
 /*@@@@@@@@@@@@@@@@@ SHOW SCROLL UP @@@@@@@@@@@@@@@@@*/
 
 window.addEventListener('scroll', scrollUp);
@@ -83,5 +103,3 @@ function scrollUp() {
     scrollUp.classList.remove('show-scrollup');
   }
 }
-
-
